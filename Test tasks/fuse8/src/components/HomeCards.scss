@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+$orange: orange;
+$green:  rgba(0, 111, 121, 1);
+
+
+@mixin font-normal{
+  font-family: Open Sans,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+
+}
+@mixin font-bold{
+  font-family: Open Sans,sans-serif;
+  font-style: normal;
+  font-weight: bold;
+
+}
+.property {
+  width: 379px;
+  height: 381px;
+  background: #f8f8f8;
+  border: 1px solid #d8d8d8;
+  box-sizing: border-box;
+ @include font-normal ();
+  position: relative;
+}
+.property-link{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.property-title{
+  @include font-bold ();
+  font-size: 20px;
+  line-height: 27px;
+  padding-left: 15px;
+}
+.property-address{
+  @include font-normal ();
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 15px;
+}
+.property-price{
+  @include font-normal ();
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 15px;
+}
+.property-img{
+  height:200px;
+  background-image: url("https://via.placeholder.com/300x150/FF0000/FFFFFF?text=title");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative
+
+}
+.property-img__type--green{
+  @include font-bold ();
+  padding-top: 10px;
+  width: 134px;
+  height: 30px;
+  color:white;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  position:absolute;
+  bottom:0;
+  right:0;
+  background:$green
+}
+.property-img__type--orange{
+  @include font-bold ();
+  padding-top: 10px;
+  width: 134px;
+  height: 30px;
+  color:white;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  position:absolute;
+  bottom:0;
+  right:0;
+  background: $orange;
+}
+
+

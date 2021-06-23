@@ -1,0 +1,50 @@
+.proposal{
+  width:1180px;
+  padding-left: 50px;
+}
+.proposal-title{
+  padding-top: 36px;
+  font-family: Open Sans,sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: #45852D;
+}
+.cards{
+  display: grid;
+  grid-template-areas: "card card card"
+  "card card card";
+  grid-gap:20px;
+}
+.proposal-button{
+  padding-top: 60px;
+  padding-bottom: 77px;
+  padding-left: 553px;
+}
+.button-see{
+  width: 150px;
+  height: 50px;
+  border: 1px solid #D8D8D8;
+  box-sizing: border-box;
+  border-radius: 25px;
+  font-family: Open Sans,sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  background: white;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .container{
+    width:720px;
+  }
+  .cards{
+    display:flex;
+    flex-direction: column;
+  }
+}
