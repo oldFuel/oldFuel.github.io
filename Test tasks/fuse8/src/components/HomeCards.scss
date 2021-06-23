@@ -25,12 +25,8 @@ $green:  rgba(0, 111, 121, 1);
   position: relative;
 }
 .property-link{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
+  text-decoration: none;
+  color:inherit;
 }
 .property-title{
   @include font-bold ();
